@@ -26,3 +26,23 @@ function getSecondLargest(nums) {
 }
 
 getSecondLargest([2,3,1,4,5,8,8,8,0,11,12])
+
+
+/* second solution */
+function getSecondLargest(nums) {
+    // Complete the function
+
+   
+      nums.sort((a,b) => b-a)
+      console.log(nums)
+
+      let largest = nums[0];
+      let temp = nums.filter(item => item !== largest)
+   
+      let secondLargest = temp[0]
+   
+
+     console.log( secondLargest )
+}
+
+getSecondLargest([2,3,1,4,5,8,8,8,0,11,12])
