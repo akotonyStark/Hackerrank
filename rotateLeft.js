@@ -8,3 +8,8 @@ function rotateLeft(d, arr) {
 
     return [...arr,...temp]
 }
+
+//driver code
+let arr = [1,2,3,4,5]
+let d = 4
+console.log(rotateLeft(d,arr))
