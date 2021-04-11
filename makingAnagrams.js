@@ -28,4 +28,4 @@ return numOfCharstoDel
 }
 }
 
-console.log(makeAnagram('fcrxzwscanmligyxyvym','jxwtrhvujlmrpdoqbisbwhmgpmeoke'))
+console.log(makeAnagram('cde','abc'))
