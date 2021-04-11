@@ -34,14 +34,11 @@ function getSecondLargest(nums) {
 
    
       nums.sort((a,b) => b-a)
+    //with original array now sorted in descending order, second largest will be in the second position
       console.log(nums)
 
-      let largest = nums[0];
-      let temp = nums.filter(item => item !== largest)
+      let secondLargest = nums[1]
    
-      let secondLargest = temp[0]
-   
-
      console.log( secondLargest )
 }
 
