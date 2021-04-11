@@ -5,7 +5,7 @@ let safe = 0, danger = 1, count = 0
 
 let jump = 0;
 while(jump<arr.length-1){
-  if(arr[jump % 2] === safe && arr[(jump+1)] === safe){
+  if(arr[jump] === safe && arr[(jump+1)] === safe){
     //check if next one is safe as well
     if(arr[jump+2] === safe){
     count++
