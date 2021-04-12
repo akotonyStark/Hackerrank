@@ -21,5 +21,10 @@ function matchingStrings1(strings, queries){
     return temp;
 }
 
-
+/* solution 3*
+very optimized code
+*/
+function matchingStrings(strings, queries) {
+   return queries.map( item => (strings.filter(value => value === item).length))
+}
    
