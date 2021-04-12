@@ -10,4 +10,16 @@ function matchingStrings(strings, queries) {
   }
 
 console.log(matchingStrings(strings, queries))
+
+/* solution 2 */
+function matchingStrings1(strings, queries){
+    let temp = [];
+    queries.forEach(que => {
+        let data = strings.filter(str => str === que).length;
+        temp.push(data);
+    });
+    return temp;
+}
+
+
    
