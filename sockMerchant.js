@@ -40,4 +40,27 @@ let arr = [1, 1, 3, 1, 2, 1, 3, 3, 3, 3]
 
 console.log(sockMerchant(9,arr))
 
+/* solution 2*/
+function sockMerchant(n, arr) {
+//first sort it out
+arr.sort((a,b)=> a-b)
+//console.log(arr)
+//work with sorted array
+let count = 0
+let index = 0
+while(index<arr.length){
+  if(arr[index] === arr[index+1]){
+     count++
+     index = index + 2
+  }
+  else{
+    index = index + 1
+  }
+  
+}
+  return (count)
+}
+
+console.log(sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
+
 
