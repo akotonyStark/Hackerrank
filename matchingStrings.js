@@ -9,4 +9,5 @@ function matchingStrings(strings, queries) {
      return arr;
   }
 
+console.log(matchingStrings(strings, queries))
    
