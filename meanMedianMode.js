@@ -30,7 +30,7 @@ console.log(arr)
 
   console.log('Mean:', mean)
   console.log('Median:', median)
-  console.log('Mode:',temp[0])
+  console.log('Mode:',temp[0] || arr[0])//print smaller element of original array if no mode exists
 }
 
 meanMedianMode(15)
