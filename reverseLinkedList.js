@@ -3,6 +3,8 @@ function reverse(head) {
         if (head == null || head.next == null) {
          return head;
          }
+        else{
+  
             let prev = null;
             let curr = head;
             let next = null;
@@ -12,6 +14,7 @@ function reverse(head) {
                 prev = curr;
                 curr = next;
             }
+        }
             return prev;
 
 }
