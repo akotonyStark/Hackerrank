@@ -29,3 +29,26 @@ return count
 
 let data = '0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 0'.split(' ').map(x => Number(x));
 console.log(jumpingOnClouds(data))
+
+
+/*solution 2*/
+function jumpingOnClouds(arr) {
+      
+let count = 0, state = 0;
+
+    arr.forEach((item, index) => {
+        if (!(state >= arr.length)) {
+            if (arr[state + 2] === 0) {
+                state += 2;
+                count++
+            } else {
+                if (arr[state + 1] === 0) {
+                    state += 1;
+                    count++
+                }
+            }
+        }
+    });
+
+    return count;
+}
