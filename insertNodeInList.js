@@ -1,4 +1,11 @@
+//create node class to be called for insertion
+const Node = class {
+    constructor(data) {
+        this.head = null;
+        this.data = data;
+    }
 
+};
 
 function insertNodeAtTail(head, data) {
 
